@@ -2,95 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 30 10% 6%;
+    --foreground: 40 100% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 30 15% 8%;
+    --card-foreground: 40 100% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 30 15% 8%;
+    --popover-foreground: 40 100% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 38 100% 36%;
+    --primary-foreground: 30 10% 6%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 30 20% 12%;
+    --secondary-foreground: 40 100% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 30 15% 15%;
+    --muted-foreground: 40 20% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 38 100% 52%;
+    --accent-foreground: 30 10% 6%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 30 20% 18%;
+    --input: 30 20% 18%;
+    --ring: 38 100% 52%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Custom colors for the page */
+    --gold: 38 100% 52%;
+    --gold-dark: 38 80% 42%;
+    --brown-dark: 25 80% 8%;
+    --brown-medium: 25 40% 15%;
+    --cream: 40 30% 95%;
+    --cream-dark: 40 20% 88%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Audio player */
+    --eaudio-bg: 0 0% 0% / 0.65;
 
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Gradients */
+    --gradient-hero: linear-gradient(180deg, hsl(25 80% 8%) 0%, hsl(25 40% 12%) 50%, hsl(25 80% 8%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(40 30% 95%) 0%, hsl(40 20% 88%) 100%);
+    --gradient-checkout: linear-gradient(135deg, hsl(25 80% 8%) 0%, hsl(25 60% 18%) 50%, hsl(25 80% 8%) 100%);
   }
 }
 
@@ -99,7 +59,297 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-montserrat antialiased;
+  }
+}
+
+@layer components {
+  /* Audio Player Styles - Preserved from original */
+  .box-audio {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .eaudio {
+    --eaudio-bg: rgba(0,0,0,0.65);
+    padding: 16px 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px;
+    background: var(--eaudio-bg);
+    backdrop-filter: blur(4px);
+    max-width: 900px;
+    transition: all 0.3s ease;
+  }
+
+  .eaudio:hover {
+    border-color: rgba(255,255,255,0.2);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  }
+
+  .eaudio-main {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .eaudio-cover-wrap {
+    width: 84px;
+    height: 84px;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+
+  .eaudio-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .eaudio-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .eaudio-title {
+    margin: 0 0 10px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4;
+  }
+
+  .eaudio-controls-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .eaudio-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+    color: #311703;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .eaudio-btn:hover {
+    background: #FFB10A;
+    color: #311703;
+    transform: scale(1.05);
+  }
+
+  .eaudio-progress-wrap {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .eaudio-progress {
+    width: 100%;
+    appearance: none;
+    height: 8px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.25);
+    cursor: pointer;
+  }
+
+  .eaudio-progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #FFB10A;
+    margin-top: 0px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+  }
+
+  .eaudio-progress::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #FFB10A;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+  }
+
+  .eaudio-time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #fff;
+    opacity: .8;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* CTA Button */
+  .cta-button {
+    @apply inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-xl transition-all duration-300;
+    background: linear-gradient(135deg, #FFB10A 0%, #D97F01 100%);
+    color: #311703;
+    box-shadow: 0 4px 20px rgba(255, 177, 10, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(255, 177, 10, 0.5);
+  }
+
+  /* Section styles */
+  .section-dark {
+    background: linear-gradient(180deg, hsl(25 80% 8%) 0%, hsl(25 40% 12%) 50%, hsl(25 80% 8%) 100%);
+  }
+
+  .section-light {
+    background: linear-gradient(180deg, hsl(40 30% 95%) 0%, hsl(40 20% 88%) 100%);
+    color: #311703;
+  }
+
+  .section-checkout {
+    background: linear-gradient(135deg, hsl(25 80% 8%) 0%, hsl(25 60% 18%) 50%, hsl(25 80% 8%) 100%);
+  }
+
+  /* Typography highlights */
+  .text-gold {
+    color: #FFB10A;
+  }
+
+  .text-gold-dark {
+    color: #D97F01;
+  }
+
+  .text-brown-dark {
+    color: #311703;
+  }
+
+  .bg-white\/80 {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .border-gold-dark\/20 {
+    border-color: rgba(217, 127, 1, 0.2);
+  }
+
+  /* Divider */
+  .divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #FFB10A, #D97F01);
+    border-radius: 2px;
+    margin: 1rem auto;
+  }
+
+  /* FAQ Accordion */
+  .faq-item {
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(0,0,0,0.3);
+    margin-bottom: 12px;
+  }
+
+  .faq-summary {
+    padding: 20px 24px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s ease;
+  }
+
+  .faq-summary:hover {
+    background: rgba(255,255,255,0.05);
+  }
+
+  .faq-content {
+    padding: 0 24px 20px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.7;
+  }
+
+  /* Bonus card */
+  .bonus-card {
+    background: rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .bonus-card:hover {
+    border-color: rgba(255, 177, 10, 0.3);
+    transform: translateY(-4px);
+  }
+
+  /* Feature item */
+  .feature-item {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Price badge */
+  .price-badge {
+    background: rgba(255, 177, 10, 0.15);
+    border: 1px solid rgba(255, 177, 10, 0.3);
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: inline-block;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .eaudio-cover-wrap {
+      width: 64px;
+      height: 64px;
+    }
+
+    .eaudio-btn {
+      width: 36px;
+      height: 36px;
+      font-size: 10px;
+    }
+
+    .eaudio-title {
+      font-size: 12px;
+    }
+
+    .eaudio-progress-wrap {
+      gap: 3px;
+    }
+
+    .eaudio-time {
+      font-size: 11px;
+    }
+
+    .cta-button {
+      @apply px-6 py-3 text-sm;
+    }
   }
 }
