@@ -306,7 +306,7 @@ const Index = () => {
 
           {/* Main CTA */}
           <a 
-            href="https://pay.hotmart.com/U102835869C?checkoutMode=10"
+            href="https://pay.kiwify.com.br/eH8zUm0"
             className="cta-button w-full text-xl animate-pulse-glow"
           >
             Eu quero agora
