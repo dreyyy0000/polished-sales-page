@@ -222,7 +222,7 @@ const Index = () => {
           <h2 className="text-xl md:text-2xl mb-10">
             Você vai receber<br />
             <span className="text-gold font-bold">20 Bônus Exclusivos</span> que custam mais de<br />
-            <strong>R$ 400,00</strong>
+            <strong>R$ 200,00</strong>
           </h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -282,7 +282,7 @@ const Index = () => {
               Valor promocional<br />dos 4 projetos<br />
               <span className="text-gold">+ bônus separadamente:</span>
             </p>
-            <p className="text-2xl line-through text-foreground/50 mb-4">R$ 399,00</p>
+            <p className="text-2xl line-through text-foreground/50 mb-4">R$ 199,00</p>
             
             <p className="text-sm text-foreground/70 mb-2">Somente ATÉ hoje</p>
             <p className="text-gold font-bold text-xl mb-4">29/12/2025</p>
