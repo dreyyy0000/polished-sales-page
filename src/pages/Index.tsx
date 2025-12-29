@@ -6,22 +6,22 @@ const Index = () => {
   // Audio player data - preserved exactly from original
   const audioTracks = [
     {
-      audioSrc: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/Musica-29-O-Sermao-do-Monte-%E2%80%93-parte-1-Bem-aventurancas-Musicas-dos-Envagelhos.mp3",
+      audioSrc: "/audio/sermao-do-monte.mp3",
       title: "Música 29 - O Sermão do Monte – parte 1 (Bem-aventuranças) - Músicas dos Evangelhos",
       coverSrc: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/Rectangle-8-copiar.webp"
     },
     {
-      audioSrc: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/Capitulo-7-%E2%80%93-A-Luta-entre-a-Carne-e-o-Espirito-%E2%80%93-Carta-de-Paulo-aos-Romanos.mp3",
+      audioSrc: "/audio/romanos-7.mp3",
       title: "Capítulo 7 – A Luta entre a Carne e o Espírito – Carta de Paulo aos Romanos",
       coverSrc: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/Rectangle-8-copiar-1.webp"
     },
     {
-      audioSrc: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/Proverbios-1-A-Voz-da-Sabedoria.mp3",
+      audioSrc: "/audio/proverbios-1.mp3",
       title: "Provérbios 1 - A Voz da Sabedoria",
       coverSrc: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/proverbios.webp"
     },
     {
-      audioSrc: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/Salmos-23.mp3",
+      audioSrc: "/audio/salmos-23.mp3",
       title: "Ouça como ficou o Salmos 23",
       coverSrc: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/Salmos.webp"
     }
