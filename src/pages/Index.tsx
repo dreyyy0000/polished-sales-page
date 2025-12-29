@@ -8,22 +8,22 @@ const Index = () => {
     {
       audioSrc: "/audio/sermao-do-monte.mp3",
       title: "Música 29 - O Sermão do Monte – parte 1 (Bem-aventuranças) - Músicas dos Evangelhos",
-      coverSrc: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/Rectangle-8-copiar.webp"
+      coverSrc: "https://images.unsplash.com/photo-1507692049790-de58290a4334?w=400&h=400&fit=crop"
     },
     {
       audioSrc: "/audio/romanos-7.mp3",
       title: "Capítulo 7 – A Luta entre a Carne e o Espírito – Carta de Paulo aos Romanos",
-      coverSrc: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/Rectangle-8-copiar-1.webp"
+      coverSrc: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=400&h=400&fit=crop"
     },
     {
       audioSrc: "/audio/proverbios-1.mp3",
       title: "Provérbios 1 - A Voz da Sabedoria",
-      coverSrc: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/proverbios.webp"
+      coverSrc: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=400&h=400&fit=crop"
     },
     {
       audioSrc: "/audio/salmos-23.mp3",
       title: "Ouça como ficou o Salmos 23",
-      coverSrc: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/Salmos.webp"
+      coverSrc: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=400&h=400&fit=crop"
     }
   ];
 
@@ -40,27 +40,27 @@ const Index = () => {
     {
       title: "Guia Emocional dos Salmos, Provérbios, Cartas de Paulo e Evangelhos",
       description: "Um guia criado para te mostrar qual música ouvir de acordo com sua necessidade espiritual.",
-      image: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/COMBOguiaemocional.webp"
+      image: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae?w=300&h=400&fit=crop"
     },
     {
       title: "Devocional 30 Dias",
       description: "Um plano devocional prático para aplicar a Palavra em 30 dias, com reflexões e orações guiadas.",
-      image: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/COMBOdevocional30d.webp"
+      image: "https://images.unsplash.com/photo-1476234251651-f353703a034d?w=300&h=400&fit=crop"
     },
     {
       title: "Versões Instrumentais para Oração e Relaxamento",
       description: "Músicas suaves, ideais para orações, momentos de paz e ambiente devocional.",
-      image: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/Intrumentais.webp"
+      image: "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=300&h=400&fit=crop"
     },
     {
       title: "Guia Visual Interativo dos Personagens Bíblicos",
       description: "Um material que apresenta os principais personagens citados nas canções, ajudando na compreensão histórica e espiritual.",
-      image: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/COMBOguiavisual.webp"
+      image: "https://images.unsplash.com/photo-1548048026-5a1a941d93d3?w=300&h=400&fit=crop"
     },
     {
       title: "Desafio 7 Dias – Memorize a Palavra",
       description: "Uma jornada de 7 dias com exercícios e músicas específicas para te ajudar a elevar ainda mais a sua fé.",
-      image: "https://bibliavivaoficial.com/wp-content/uploads/2025/11/COMBOdesafio7d.webp"
+      image: "https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?w=300&h=400&fit=crop"
     }
   ];
 
@@ -139,9 +139,9 @@ const Index = () => {
           {/* Product Image */}
           <div className="mb-10">
             <img 
-              src="https://bibliavivaoficial.com/wp-content/uploads/2025/11/Group-31-copiar.webp" 
+              src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=500&fit=crop" 
               alt="Coleção Bíblia em Música"
-              className="mx-auto max-w-xs md:max-w-sm drop-shadow-2xl"
+              className="mx-auto max-w-xs md:max-w-sm drop-shadow-2xl rounded-xl"
             />
           </div>
 
@@ -156,19 +156,25 @@ const Index = () => {
             <span className="text-gold-dark">O que estão falando sobre</span> a Bíblia em Música
           </h2>
 
-          <div className="space-y-4">
-            <img 
-              src="https://bibliavivaoficial.com/wp-content/uploads/2025/05/Imagem-do-WhatsApp-de-2025-05-03-as-12.25.23_6cb08ba2.jpg"
-              alt="Depoimento"
-              className="w-full rounded-lg"
-              loading="lazy"
-            />
-            <img 
-              src="https://bibliavivaoficial.com/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-06-at-02.04.33-2.jpeg"
-              alt="Depoimento"
-              className="w-full rounded-lg"
-              loading="lazy"
-            />
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-gold/20">
+              <img 
+                src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=80&h=80&fit=crop"
+                alt="Avatar"
+                className="w-16 h-16 rounded-full mx-auto mb-4 object-cover border-2 border-gold"
+              />
+              <p className="text-foreground/90 italic mb-4">"A Bíblia em Música transformou minha vida de oração. Agora consigo meditar na Palavra enquanto ouço melodias lindas. Minha fé nunca foi tão forte!"</p>
+              <p className="text-gold font-semibold">— Maria S.</p>
+            </div>
+            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-gold/20">
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop"
+                alt="Avatar"
+                className="w-16 h-16 rounded-full mx-auto mb-4 object-cover border-2 border-gold"
+              />
+              <p className="text-foreground/90 italic mb-4">"Uso no meu devocional diário. As músicas dos Salmos me trazem paz e conexão com Deus como nunca antes experimentei."</p>
+              <p className="text-gold font-semibold">— João P.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -239,11 +245,12 @@ const Index = () => {
       {/* GUARANTEE SECTION */}
       <section className="section-dark py-16 md:py-20 px-4 border-t border-border">
         <div className="container mx-auto max-w-md text-center">
-          <img 
-            src="https://bibliavivaoficial.com/wp-content/uploads/2025/11/SELO.webp"
-            alt="Selo de Garantia"
-            className="w-40 md:w-48 mx-auto mb-6"
-          />
+          <div className="w-40 md:w-48 h-40 md:h-48 mx-auto mb-6 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center shadow-2xl border-4 border-gold/30">
+            <div className="text-center">
+              <p className="text-3xl font-bold text-background">7</p>
+              <p className="text-xs font-semibold text-background/90 uppercase">dias de<br/>garantia</p>
+            </div>
+          </div>
           <h3 className="text-xl md:text-2xl font-bold mb-4">
             Garantia <span className="text-gold">Incondicional</span>
           </h3>
@@ -264,7 +271,7 @@ const Index = () => {
 
           {/* Product Image */}
           <img 
-            src="https://bibliavivaoficial.com/wp-content/uploads/2025/11/Capa1lamina.webp"
+            src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&h=500&fit=crop"
             alt="Coleção Completa"
             className="w-64 md:w-80 mx-auto my-8 rounded-lg shadow-2xl"
           />
@@ -281,7 +288,7 @@ const Index = () => {
             <p className="text-gold font-bold text-xl mb-4">29/12/2025</p>
 
             <p className="text-lg mb-2">por apenas:</p>
-            <p className="text-5xl md:text-6xl font-bold text-gold mb-6">R$ 37,00</p>
+            <p className="text-5xl md:text-6xl font-bold text-gold mb-6">R$ 19,90</p>
           </div>
 
           {/* Badges */}
