@@ -134,13 +134,14 @@
   }
 
   .eaudio-btn {
-    width: 32px;
+    min-width: 44px;
     height: 32px;
-    border-radius: 50%;
+    padding: 0 12px;
+    border-radius: 16px;
     border: none;
     background: #fff;
     color: #311703;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     cursor: pointer;
     display: flex;
@@ -148,12 +149,14 @@
     justify-content: center;
     transition: all 0.2s ease;
     flex-shrink: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
 
   .eaudio-btn:hover {
     background: #FFB10A;
     color: #311703;
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
 
   .eaudio-progress-wrap {

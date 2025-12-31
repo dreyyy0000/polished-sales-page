@@ -93,7 +93,7 @@ const AudioPlayer = ({ audioSrc, title, coverSrc }: AudioPlayerProps) => {
               alt="Capa da Música"
               loading="lazy"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = 'https://via.placeholder.com/84?text=🎵';
+                (e.target as HTMLImageElement).src = 'https://via.placeholder.com/84?text=Audio';
               }}
             />
           </div>
@@ -110,7 +110,7 @@ const AudioPlayer = ({ audioSrc, title, coverSrc }: AudioPlayerProps) => {
                   aria-label="Tocar"
                   onClick={handlePlayClick}
                 >
-                  ▶
+                  <span className="text-xs font-bold">PLAY</span>
                 </button>
               ) : (
                 <button 
@@ -118,7 +118,7 @@ const AudioPlayer = ({ audioSrc, title, coverSrc }: AudioPlayerProps) => {
                   aria-label="Pausar"
                   onClick={handlePauseClick}
                 >
-                  ❚❚
+                  <span className="text-xs font-bold">II</span>
                 </button>
               )}
 
