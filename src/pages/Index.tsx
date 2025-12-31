@@ -76,6 +76,15 @@ const Index = () => {
       {/* HERO SECTION */}
       <section className="section-dark py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-4xl text-center">
+          {/* Header Image */}
+          <div className="mb-10">
+            <img 
+              src="/images/header-bible.jpg" 
+              alt="Bíblia iluminada"
+              className="mx-auto w-32 md:w-40 opacity-80"
+            />
+          </div>
+
           {/* Logo */}
           <div className="mb-8">
             <img 
