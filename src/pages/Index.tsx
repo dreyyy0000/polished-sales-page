@@ -158,80 +158,66 @@ const Index = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Depoimento 1 */}
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-gold/20">
+            <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm border border-gold/20">
               <img 
                 src="/images/testimonial-1.jpg"
-                alt="salao.canil.happy.dog"
-                className="w-16 h-16 rounded-full mx-auto mb-4 object-cover border-2 border-gold"
+                alt="Depoimento @salao.canil.happy.dog"
+                className="w-full rounded-lg shadow-md"
               />
-              <p className="text-foreground/90 italic mb-4">"Eu comprei e estou amando"</p>
-              <p className="text-gold font-semibold">— @salao.canil.happy.dog</p>
             </div>
 
             {/* Depoimento 2 */}
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-gold/20">
+            <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm border border-gold/20">
               <img 
                 src="/images/testimonial-2.jpg"
-                alt="Ivana Jaber"
-                className="w-16 h-16 rounded-full mx-auto mb-4 object-cover border-2 border-gold"
+                alt="Depoimento Ivana Jaber"
+                className="w-full rounded-lg shadow-md"
               />
-              <p className="text-foreground/90 italic mb-4">"Paguei, recebi e estou amando. Muito bom mesmo. É demais!!!! Muito bom mesmo. Que Deus abençoe sempre o administrador dessa ideia."</p>
-              <p className="text-gold font-semibold">— Ivana Jaber</p>
             </div>
 
             {/* Depoimento 3 */}
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-gold/20">
+            <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm border border-gold/20">
               <img 
                 src="/images/testimonial-3.jpg"
-                alt="Rogério Panassio"
-                className="w-16 h-16 rounded-full mx-auto mb-4 object-cover border-2 border-gold"
+                alt="Depoimento Rogério Panassio"
+                className="w-full rounded-lg shadow-md"
               />
-              <p className="text-foreground/90 italic mb-4">"Ficou lindo demais parabéns 😍😍😍 É um jeito de decorar fácil"</p>
-              <p className="text-gold font-semibold">— Rogério Panassio</p>
             </div>
 
             {/* Depoimento 4 */}
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-gold/20">
+            <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm border border-gold/20">
               <img 
                 src="/images/testimonial-4.jpg"
-                alt="mariangela_pinheiro24"
-                className="w-16 h-16 rounded-full mx-auto mb-4 object-cover border-2 border-gold"
+                alt="Depoimento @mariangela_pinheiro24"
+                className="w-full rounded-lg shadow-md"
               />
-              <p className="text-foreground/90 italic mb-4">"Maravilhoso... Perfeito, amei"</p>
-              <p className="text-gold font-semibold">— @mariangela_pinheiro24</p>
             </div>
 
             {/* Depoimento 5 */}
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-gold/20">
+            <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm border border-gold/20">
               <img 
                 src="/images/testimonial-5.jpg"
-                alt="kitalbolosepaes"
-                className="w-16 h-16 rounded-full mx-auto mb-4 object-cover border-2 border-gold"
+                alt="Depoimento @kitalbolosepaes"
+                className="w-full rounded-lg shadow-md"
               />
-              <p className="text-foreground/90 italic mb-4">"Depois que ouvi o primeiro salmo cantado, virou meu vício ouço todos os dias várias listas de palavra cantada é uma delícia de ouvir. ❤️❤️❤️"</p>
-              <p className="text-gold font-semibold">— @kitalbolosepaes</p>
             </div>
 
             {/* Depoimento 6 */}
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-gold/20">
+            <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm border border-gold/20">
               <img 
                 src="/images/testimonial-6.jpg"
-                alt="shirleipessoa"
-                className="w-16 h-16 rounded-full mx-auto mb-4 object-cover border-2 border-gold"
+                alt="Depoimento @shirleipessoa"
+                className="w-full rounded-lg shadow-md"
               />
-              <p className="text-foreground/90 italic mb-4">"Eu amei todas as faixas 😍😍"</p>
-              <p className="text-gold font-semibold">— @shirleipessoa</p>
             </div>
 
             {/* Depoimento 7 */}
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-gold/20 sm:col-span-2 lg:col-span-3">
+            <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm border border-gold/20 sm:col-span-2 lg:col-span-3 flex justify-center">
               <img 
                 src="/images/testimonial-7.jpg"
                 alt="Depoimento"
-                className="w-16 h-16 rounded-full mx-auto mb-4 object-cover border-2 border-gold"
+                className="max-w-md rounded-lg shadow-md"
               />
-              <p className="text-foreground/90 italic mb-4">"Eu estou encantada! O Salmo 27 ficou perfeito demais"</p>
-              <p className="text-gold font-semibold">— Seguidora</p>
             </div>
           </div>
         </div>
