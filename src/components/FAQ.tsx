@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
 
 interface FAQItem {
   question: string;
@@ -72,11 +71,13 @@ const FAQ = () => {
             }}
           >
             <span className="pr-4">{item.question}</span>
-            <ChevronDown 
-              className={`w-5 h-5 transition-transform duration-300 flex-shrink-0 ${
-                openIndex === index ? 'rotate-180' : ''
+            <span 
+              className={`text-sm font-medium text-gold transition-transform duration-300 flex-shrink-0 ${
+                openIndex === index ? 'opacity-50' : ''
               }`}
-            />
+            >
+              {openIndex === index ? 'fechar' : 'ver'}
+            </span>
           </summary>
           {openIndex === index && (
             <div className="faq-content">
