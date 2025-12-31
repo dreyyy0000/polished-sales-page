@@ -118,7 +118,7 @@ const AudioPlayer = ({ audioSrc, title, coverSrc }: AudioPlayerProps) => {
                   aria-label="Pausar"
                   onClick={handlePauseClick}
                 >
-                  <span className="text-xs font-bold">II</span>
+                  <span className="text-xs font-bold">PAUSE</span>
                 </button>
               )}
 
