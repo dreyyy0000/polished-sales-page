@@ -151,29 +151,87 @@ const Index = () => {
 
       {/* TESTIMONIALS SECTION */}
       <section className="section-dark py-16 md:py-24 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
+        <div className="container mx-auto max-w-5xl text-center">
           <h2 className="text-xl md:text-2xl font-semibold mb-8">
             <span className="text-gold-dark">O que estão falando sobre</span> a Bíblia em Música
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Depoimento 1 */}
             <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-gold/20">
               <img 
-                src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=80&h=80&fit=crop"
-                alt="Avatar"
+                src="/images/testimonial-1.jpg"
+                alt="salao.canil.happy.dog"
                 className="w-16 h-16 rounded-full mx-auto mb-4 object-cover border-2 border-gold"
               />
-              <p className="text-foreground/90 italic mb-4">"A Bíblia em Música transformou minha vida de oração. Agora consigo meditar na Palavra enquanto ouço melodias lindas. Minha fé nunca foi tão forte!"</p>
-              <p className="text-gold font-semibold">— Maria S.</p>
+              <p className="text-foreground/90 italic mb-4">"Eu comprei e estou amando"</p>
+              <p className="text-gold font-semibold">— @salao.canil.happy.dog</p>
             </div>
+
+            {/* Depoimento 2 */}
             <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-gold/20">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop"
-                alt="Avatar"
+                src="/images/testimonial-2.jpg"
+                alt="Ivana Jaber"
                 className="w-16 h-16 rounded-full mx-auto mb-4 object-cover border-2 border-gold"
               />
-              <p className="text-foreground/90 italic mb-4">"Uso no meu devocional diário. As músicas dos Salmos me trazem paz e conexão com Deus como nunca antes experimentei."</p>
-              <p className="text-gold font-semibold">— João P.</p>
+              <p className="text-foreground/90 italic mb-4">"Paguei, recebi e estou amando. Muito bom mesmo. É demais!!!! Muito bom mesmo. Que Deus abençoe sempre o administrador dessa ideia."</p>
+              <p className="text-gold font-semibold">— Ivana Jaber</p>
+            </div>
+
+            {/* Depoimento 3 */}
+            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-gold/20">
+              <img 
+                src="/images/testimonial-3.jpg"
+                alt="Rogério Panassio"
+                className="w-16 h-16 rounded-full mx-auto mb-4 object-cover border-2 border-gold"
+              />
+              <p className="text-foreground/90 italic mb-4">"Ficou lindo demais parabéns 😍😍😍 É um jeito de decorar fácil"</p>
+              <p className="text-gold font-semibold">— Rogério Panassio</p>
+            </div>
+
+            {/* Depoimento 4 */}
+            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-gold/20">
+              <img 
+                src="/images/testimonial-4.jpg"
+                alt="mariangela_pinheiro24"
+                className="w-16 h-16 rounded-full mx-auto mb-4 object-cover border-2 border-gold"
+              />
+              <p className="text-foreground/90 italic mb-4">"Maravilhoso... Perfeito, amei"</p>
+              <p className="text-gold font-semibold">— @mariangela_pinheiro24</p>
+            </div>
+
+            {/* Depoimento 5 */}
+            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-gold/20">
+              <img 
+                src="/images/testimonial-5.jpg"
+                alt="kitalbolosepaes"
+                className="w-16 h-16 rounded-full mx-auto mb-4 object-cover border-2 border-gold"
+              />
+              <p className="text-foreground/90 italic mb-4">"Depois que ouvi o primeiro salmo cantado, virou meu vício ouço todos os dias várias listas de palavra cantada é uma delícia de ouvir. ❤️❤️❤️"</p>
+              <p className="text-gold font-semibold">— @kitalbolosepaes</p>
+            </div>
+
+            {/* Depoimento 6 */}
+            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-gold/20">
+              <img 
+                src="/images/testimonial-6.jpg"
+                alt="shirleipessoa"
+                className="w-16 h-16 rounded-full mx-auto mb-4 object-cover border-2 border-gold"
+              />
+              <p className="text-foreground/90 italic mb-4">"Eu amei todas as faixas 😍😍"</p>
+              <p className="text-gold font-semibold">— @shirleipessoa</p>
+            </div>
+
+            {/* Depoimento 7 */}
+            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-gold/20 sm:col-span-2 lg:col-span-3">
+              <img 
+                src="/images/testimonial-7.jpg"
+                alt="Depoimento"
+                className="w-16 h-16 rounded-full mx-auto mb-4 object-cover border-2 border-gold"
+              />
+              <p className="text-foreground/90 italic mb-4">"Eu estou encantada! O Salmo 27 ficou perfeito demais"</p>
+              <p className="text-gold font-semibold">— Seguidora</p>
             </div>
           </div>
         </div>
